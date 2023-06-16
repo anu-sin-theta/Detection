@@ -32,7 +32,7 @@ while True:
             f"{round(score.item(), 3)} at location {box}"
         )
     frame = cv2.resize(frame, (640, 480), interpolation=cv2.INTER_AREA)
-    cv2.imshow("frame", frame)
+    cv2.imshow("frames", frame)
     if cv2.waitKey(1) == ord('q'):
         break
 
