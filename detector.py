@@ -43,7 +43,7 @@ while True:
     new_objects = objects.difference(detected_objects)
     detected_objects = detected_objects.union(objects)
     if len(new_objects) > 0:
-        print(f"Detected {len(new_objects)} new objects: {', '.join(new_objects)}")
+        print(f"Detected {len(new_objects)} : {', '.join(new_objects)}")
 
     # Draw bounding boxes on the frame
     frame = cv2.resize(frame, (640, 480), interpolation=cv2.INTER_AREA)
